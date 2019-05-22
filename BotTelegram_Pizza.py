@@ -10,7 +10,7 @@ from unidecode import unidecode
 
 from telepot.loop import MessageLoop
 
-from telepot.namedtuple import ForceReply, InlineKeyboardMarkup, InlineKeyboardButton, ReplyKeyboardMarkup, KeyboardButton
+from telepot.namedtuple import  ReplyKeyboardMarkup, KeyboardButton
 
 TOKEN = sys.argv[1:]  # get token from command-line
 
