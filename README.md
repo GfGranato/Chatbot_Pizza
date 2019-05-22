@@ -1,7 +1,7 @@
 # Chatbot_Pizza
-###Trabalho da matéria Interação Humano Computador, da Fatec SJC
+>Trabalho da matéria Interação Humano Computador, da Fatec SJC
 
-##Introdução
+## Introdução
 
 Esse trabalho tem como objetivo utilizar a biblioteca **_Telepot_** para desenvolver um bot para o **TELEGRAM**.
 
