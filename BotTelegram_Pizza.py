@@ -65,7 +65,7 @@ def handle(msg):
         complemento = (msg['text'])
         bot.sendMessage(chat_id, 'Faça seu pedido, digite o numero para a opção para pizza')
 
-        media = r"https://drive.google.com/open?id=0B-mjIwrgC8ekWjVpakRiM0RpWUE"
+        media = r"https://github.com/GfGranato/Chatbot_Pizza/blob/master/pizzaboy.PNG?raw=true"
         bot.sendPhoto(chat_id, media, caption='Cardápio')
 
         #for piz in cardapio_pizza:
@@ -98,6 +98,7 @@ def handle(msg):
             ##
             valor += valorpedido*(valor_PTamanho[(msg['text'])])
             valorpedido=0
+
             keyboard=ReplyKeyboardMarkup(
             keyboard=[[
                     KeyboardButton(text="Sim"),
@@ -171,8 +172,8 @@ def handle(msg):
                     bot.sendMessage(chat_id, pizza[k][2:] + ' de tamanho ' + tamanhoP[k])
                 for m in range(len(refrigerante)):
                     bot.sendMessage(chat_id, refrigerante[m][2:]+ ' de '+ tamanhoR[m])
-
-                bot.sendMessage(chat_id, 'Tudo saiu no valor de R$'+ str(valor))
+                
+                bot.sendMessage(chat_id, 'Tudo saiu no valor de R$'+ str(round(valor,2)))
 
                 keyboard=ReplyKeyboardMarkup(
                 keyboard=[[
@@ -196,7 +197,9 @@ def handle(msg):
                 tamanhoR = []
                 valor = 0
                 valorpedido = 0
-                nivel = 3
+                nivel = 4
+                bot.sendMessage(chat_id, 'Faça seu pedido, digite o numero para a opção para pizza')
+
 
 bot = telepot.Bot(token='830025759:AAGFXGtpWrWyEkWI_eQO1Q6karejEZv8Yxs')
 MessageLoop(bot, handle).run_as_thread()
