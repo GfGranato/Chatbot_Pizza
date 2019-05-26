@@ -10,3 +10,5 @@ Como exemplo utilizamos um sistema para pedir pizza utilizando algumas funções
 * _sendPhoto_;
 * _InlineKeyboardMarkup_ e;
 * _KeyboardButton_. 
+
+Para o funcionamento do sendPhoto foi adicionado no diretório do GitHub uma imagem cujo link é utilizado pela função.
