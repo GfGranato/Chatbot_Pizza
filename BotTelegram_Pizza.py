@@ -38,10 +38,10 @@ def handle(msg):
           
     #Cardápios
     cardapio_pizza= {1:'1 Pizza calabreza', 2:'2 Pizza 4 queijos', 3: '3 Pizza escarola'}
-    valor_pizza= {1: 25.99, 2: 22.80, 3: 27.15}
+    valor_pizza= {1: 20.00, 2: 22.00, 3: 19.00}
     valor_PTamanho= {"Brotinho": 0.8, "Média": 1, "Grande": 1.2}
     cardapio_refri= {1:'1 Coca-cola', 2:'2 Fanta-uva', 3:'3 Guaraná'}
-    valor_refri= {1: 4.2, 2: 3.81, 3: 3.27}
+    valor_refri= {1: 6.25, 2: 5.00, 3: 5.00}
     valor_RTamanho= {"600 mL": 0.8, "1.5 L": 1, "2 L": 1.2}    
     #usuário cadastro
     if nivel == 0:
